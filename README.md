@@ -1,1 +1,3 @@
 # Notes
+
+### This repos is for giving away some interesting things. Like papers, codes, some lines of notes ...
