@@ -1,0 +1,15 @@
+# For Huyenntx
+
+## Problems
+To find the derivatives of the networks, we need to backpropagate from the final ones to the initial ones. By the chain rule, the derivatives of each layer are the
+multiplication of all later layers. Certain activation functions, like the sigmoid function, shrinks a large input space into a small space between 0 and 1. 
+Hence, an exponential change of the input of the sigmoid function will make a tiny change in the output. Therefore, the derivative becomes small.
+By adding more layers to neural networks, the gradient significantly decreases to zero as we propagate down to the initial layers. A small gradient means that the 
+weights and biases of the initial layers will not be updated effectively with each training iteration. In particular, for the earlier layers, they are often crucial 
+to extract the foundational structures of the input data, it can lead to an overall inaccuracy of the whole network. 
+
+## Solutions
+- Use other activation functions like ReLU, RReLU , PReLU ...
+- Weight initialization (such as Xavier and He Initialization).
+- Use residual networks.
+- Use batch norm.
